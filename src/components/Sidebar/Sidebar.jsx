@@ -40,7 +40,7 @@ const Sidebar = ({ id }) => {
           <span className="fw-bold">Your ID</span> :{" "}
           <span className="text-muted">{id}</span>
         </div>
-        <Button className="py-2 rounded-0">
+        <Button className="py-2 rounded-0" onClick={() => setModalOpen(true)}>
           New {conversationOpen ? "Conversation" : "Contacts"}
         </Button>
       </Tab.Container>

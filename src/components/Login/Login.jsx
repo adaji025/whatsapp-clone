@@ -19,7 +19,7 @@ const Login = ({onIdSubmit}) => {
         <Form className='cw' onSubmit={handleSubmit}>
             <Form.Group className="mx-auto mb-3">
                 <Form.Label className='fw-bold'>Enter Your ID</Form.Label>
-                <Form.Control type='text' ref={idRef} className="" ></Form.Control>
+                <Form.Control type='text' ref={idRef} required ></Form.Control>
             </Form.Group>
             <Button type='submit' className='me-3'>Login</Button>
             <Button variant='secondary' onClick={createNewId}>Create an ID</Button>
